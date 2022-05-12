@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <nav className="nav">
-      <img src="/images/animesh.png" alt="" />
+      <img src="/logo192.png" alt="" />
       <div className="nav_menu">
         {show && (
           <ul>
