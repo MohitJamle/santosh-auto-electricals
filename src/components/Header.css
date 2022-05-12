@@ -1,0 +1,21 @@
+.header {
+  position: relative;
+  height: 350px;
+  background: url("/public//Images/Header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: -10px;
+}
+
+.header_container {
+  position: absolute;
+  bottom: 90px;
+  width: 100%;
+}
+
+.header_container h1 {
+  text-align: center;
+  color: #e9e2ff;
+  font-size: 50px;
+}

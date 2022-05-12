@@ -1,0 +1,103 @@
+.cars_list {
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  padding-bottom: 25px;
+  overflow: hidden;
+}
+
+.cars_listItem {
+  position: relative;
+  min-width: 200px;
+  margin: 1% 1.1%;
+  float: left;
+  border: 1px solid #006d8b;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cars_listItem img {
+  width: 60%;
+  margin: 5px 0;
+  transition: all 800ms;
+}
+.cars_listItem img:hover {
+  transform: rotate(360deg);
+}
+.cars_listItem button {
+  margin-bottom: 1px;
+  width: 100%;
+  background-color: #0092bb;
+  color: white;
+  font-size: 15px;
+  border: none;
+  padding: 3px;
+  z-index: 0;
+  text-transform: uppercase;
+  transition: all 500ms;
+}
+
+.brand {
+  max-height: 40px;
+  min-height: 40px;
+  object-fit: contain;
+}
+
+.cars_listItem button:hover {
+  background-color: #002c38;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 438px) {
+  .cars_listItem {
+    min-width: 120px;
+    width: 180px;
+  }
+}
+
+@media only screen and (max-width: 397px) {
+  .cars_listItem {
+    min-width: 120px;
+    width: 170px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .cars_listItem {
+    min-width: 120px;
+    width: 160px;
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  .cars_listItem {
+    min-width: 120px;
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 334px) {
+  .cars_listItem {
+    min-width: 120px;
+    width: 140px;
+  }
+}
+
+@media only screen and (max-width: 313px) {
+  .cars_listItem {
+    min-width: 120px;
+    width: 130px;
+  }
+}
+
+@media only screen and (max-width: 292px) {
+  .cars_listItem {
+    min-width: 120px;
+    width: 120px;
+  }
+}
