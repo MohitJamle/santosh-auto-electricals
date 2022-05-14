@@ -1,21 +1,28 @@
 .nav {
-  position: sticky;
-  top: 0;
+  position: relative;
   max-height: 70px;
   background-color: #006d8b;
-  background: linear-gradient(rgb(0, 74, 95), rgb(0, 109, 139));
+  background: transparent;
   color: white;
   padding: 5px 5px;
   display: flex;
   align-items: center;
   z-index: 10;
   width: 100vw;
+  transition-timing-function: ease-in-out;
+  transition: all 0.5s;
+}
+
+.nav_black {
+  position: sticky;
+  top: 0;
+  background: rgb(227 16 16);
 }
 
 .nav img {
   height: 60px;
   width: 60px;
-  object-fit: contain;
+  object-fit: cover;
   margin-left: 20px;
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.7);

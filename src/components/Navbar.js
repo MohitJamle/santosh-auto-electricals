@@ -5,6 +5,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
+  const [shown, handleshow] = useState(false);
 
   useEffect(() => {
     if (window.innerWidth >= 560) {
@@ -12,8 +13,19 @@ const Navbar = () => {
     }
   }, []);
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 250) {
+        handleshow(true);
+      } else handleshow(false);
+    });
+    return () => {
+      window.removeEventListener("scroll", () => {});
+    };
+  }, []);
+
   return (
-    <nav className="nav">
+    <nav className={`nav ${shown && "nav_black"}`}>
       <img src="/logo192.png" alt="" />
       <div className="nav_menu">
         {show && (

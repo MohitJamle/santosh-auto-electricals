@@ -1,11 +1,12 @@
 .header {
   position: relative;
-  height: 350px;
-  background: url("/public//Images/Header.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  height: 420px;
+  background: url("/public/Images/Heade.png");
+  background-color: red;
+  background-size: 100% 100%;
+  background-position: top right;
   margin: -10px;
+  margin-top: -79px;
 }
 
 .header_container {
@@ -16,6 +17,15 @@
 
 .header_container h1 {
   text-align: center;
-  color: #e9e2ff;
+  padding-top: 100px;
+  color: #ffffff;
   font-size: 50px;
+}
+
+@media only screen and (max-width: 590px) {
+  .header {
+    background: url("/public/Images/heade2.jpeg");
+    background-position: center left;
+    background-size: cover;
+  }
 }
