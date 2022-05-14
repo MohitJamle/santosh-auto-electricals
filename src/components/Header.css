@@ -1,7 +1,7 @@
 .header {
   position: relative;
   height: 420px;
-  background: url("/public/Images/Heade.png");
+  background: url("/public/Images/Header.png");
   background-color: red;
   background-size: 100% 100%;
   background-position: top right;
@@ -17,15 +17,30 @@
 
 .header_container h1 {
   text-align: center;
-  padding-top: 100px;
-  color: #ffffff;
-  font-size: 50px;
+  width: 100%;
+  color: #611515;
+  font-size: 30px;
+  position: absolute;
+  top: 35px;
+  display: none;
 }
 
 @media only screen and (max-width: 590px) {
   .header {
-    background: url("/public/Images/heade2.jpeg");
+    background: url("/public/Images/Heade.png");
     background-position: center left;
-    background-size: cover;
+    background-size: 100% 100%;
+  }
+  .header_container h1 {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 337px) {
+  .header_container h1 {
+    text-align: center;
+    font-size: 8vw;
+    /* position: absolute; */
+    /* top: 15px; */
   }
 }
