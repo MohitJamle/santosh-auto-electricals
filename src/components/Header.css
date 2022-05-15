@@ -1,12 +1,12 @@
 .header {
   position: relative;
-  height: 420px;
+  height: 450px;
   background: url("/public/Images/Header.png");
   background-color: red;
   background-size: 100% 100%;
-  background-position: top right;
+  background-position: top;
   margin: -10px;
-  margin-top: -79px;
+  margin-top: -70px;
 }
 
 .header_container {

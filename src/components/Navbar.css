@@ -2,6 +2,7 @@
   position: sticky;
   top: -50px;
   max-height: 70px;
+  min-height: 60px;
   background-color: #006d8b;
   background: transparent;
   color: white;
@@ -20,7 +21,7 @@
 
 .nav img {
   position: absolute;
-  top: 20px;
+  top: 3px;
   height: 60px;
   width: 60px;
   object-fit: cover;
@@ -41,6 +42,8 @@
 .nav_menu ul {
   display: flex;
   list-style: none;
+  position: absolute;
+  top: 20px;
 }
 
 .nav_menu ul a {
@@ -65,16 +68,20 @@
 
 .nav .MuiSvgIcon-root {
   position: absolute;
-  top: -20px;
+  top: -0px;
   display: none;
 }
 
 @media only screen and (max-width: 590px) {
+  .nav img {
+    position: absolute;
+    top: 30px;
+  }
   .nav_menu ul {
     flex-direction: column;
-    position: relative;
-    top: 35px;
-    right: 20px;
+    position: absolute;
+    top: 5px;
+    right: 50px;
     background-color: black;
   }
   .nav_menu ul li {
