@@ -1,10 +1,11 @@
 .nav {
-  position: relative;
+  position: sticky;
+  top: -50px;
   max-height: 70px;
   background-color: #006d8b;
   background: transparent;
   color: white;
-  padding: 5px 5px;
+  padding: 0px 5px;
   display: flex;
   align-items: center;
   z-index: 10;
@@ -14,12 +15,12 @@
 }
 
 .nav_black {
-  position: sticky;
-  top: 0;
   background: rgb(227 16 16);
 }
 
 .nav img {
+  position: absolute;
+  top: 20px;
   height: 60px;
   width: 60px;
   object-fit: cover;
@@ -42,6 +43,11 @@
   list-style: none;
 }
 
+.nav_menu ul a {
+  text-decoration: none;
+  color: white;
+}
+
 .nav_menu ul li {
   margin: 0 20px;
   cursor: pointer;
@@ -58,6 +64,8 @@
 }
 
 .nav .MuiSvgIcon-root {
+  position: absolute;
+  top: -20px;
   display: none;
 }
 
@@ -65,7 +73,8 @@
   .nav_menu ul {
     flex-direction: column;
     position: relative;
-    top: 30px;
+    top: 35px;
+    right: 20px;
     background-color: black;
   }
   .nav_menu ul li {
