@@ -1,7 +1,7 @@
 import { IconButton } from "@material-ui/core";
-import { Menu } from "@material-ui/icons";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Spin as Hamburger } from "hamburger-react";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -44,7 +44,7 @@ const Navbar = () => {
         </ul>
       </div>
       <IconButton onClick={() => setShow(!show)}>
-        <Menu />
+        <Hamburger />
       </IconButton>
     </nav>
   );
